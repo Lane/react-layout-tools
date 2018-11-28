@@ -1,0 +1,15 @@
+.wrapper {
+  background: var(--header-color);
+  border-bottom: 1px solid var(--shade-1);
+  width:100%;
+  flex:0;
+  height: var(--header-size);
+}
+
+.title {
+  margin:0;
+}
+
+.title a {
+  text-decoration: none; 
+}

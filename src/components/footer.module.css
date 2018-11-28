@@ -1,0 +1,12 @@
+.wrapper { 
+  background: var(--shade-0);
+  padding: 1rem 1.5rem;
+  width:100%;
+  flex:0;
+}
+
+.content { 
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}

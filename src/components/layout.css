@@ -1,0 +1,115 @@
+:root { 
+
+  --page-margin: 1.5rem;
+  --spacer: 1rem;
+  --base-font-size: 16px;
+  --max-content-width: 60rem;
+
+  --shade-0: #f4f4f4;
+  --shade-1: #e0e0e0;
+  --shade-2: #d4d4d4;
+  --shade-3: #c0c0c0;
+  --shade-4: #b4b4b4;
+  --shade-5: #a0a0a0;
+  --shade-6: #949494;
+  --shade-7: #808080;
+  --shade-8: #747474;
+  --shade-9: #606060;
+
+  --header-size: 5rem;
+  --header-color: #fff;
+}
+
+html {
+  font-size: var(--base-font-size);
+  line-height: 1.42;
+  height:100%;
+}
+
+body {
+  height:100%;
+}
+
+.main {
+  width:100%;
+  flex:1;
+}
+
+.page {
+  position:absolute;
+  width: 100%;
+  min-height:100%;
+  top:0; left:0; 
+  display:flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.ui-window {
+  background: #000;
+  padding: 2px;
+  border-radius: 2px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  opacity:1;
+  pointer-events: all;
+}
+.ui-window.inactive {
+  opacity: 0.2;
+}
+
+.ui-scroll-content {
+  max-height: 122px;
+  overflow:auto;
+}
+
+.ui-toolbar {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  height: 36px;
+  cursor:move;
+}
+
+.ui-toolbar > span {
+  font-size:12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-left: 6px;
+  user-select: none;
+}
+
+.ui-icon-button {
+  border: 1px solid #444;
+  border-radius: 100%;
+  width:24px;
+  height:24px;
+  line-height:20px;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+}
+.ui-icon-button:hover {
+  background: rgb(248, 108, 108);
+  border-color: rgb(112, 50, 50);
+}
+
+.ui-btn-trigger {
+  position: fixed;
+  right:0;
+  bottom:0;
+  background: #333;
+  border:0;
+  color: #fff;
+  padding: 16px;
+  border-radius: 44px 0 0 0;
+  width: 44px;
+  height: 44px;
+}
+.ui-btn-trigger:hover {
+  background: #666;
+  cursor: pointer;
+}
