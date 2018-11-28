@@ -57,6 +57,9 @@ body {
 .ui-window.inactive {
   opacity: 0.2;
 }
+.ui-window:hover {
+  opacity:1!important;
+}
 
 .ui-scroll-content {
   max-height: 122px;
